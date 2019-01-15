@@ -19,8 +19,8 @@ fun main(args: Array<String>) {
 
     val raio = 4.3 //O tipo é inferido (Double)
     var area = calcAreaCirculo(raio)
-    println("A área da circunferência de raio " + raio + "m é " + area + "m2")
+    println("A área da circunferência de raio ${raio}m é ${area}m2")
 
     area = calcAreaCirculo()
-    println("A área para o raio default é " + area)
+    println("A área para o raio default é ${if (area>10) "maior" else "menor"} que 10m2")
 }
